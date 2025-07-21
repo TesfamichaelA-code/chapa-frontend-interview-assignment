@@ -204,7 +204,7 @@ export function SuperAdminDashboard() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {/* Admin Management */}
+        
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center justify-between">
@@ -284,7 +284,7 @@ export function SuperAdminDashboard() {
           </CardContent>
         </Card>
 
-        {/* User Management */}
+        
         <Card>
           <CardHeader>
             <CardTitle>User Management</CardTitle>
@@ -327,7 +327,7 @@ export function SuperAdminDashboard() {
         </Card>
       </div>
 
-      {/* Payment Summaries */}
+      
       <Card>
         <CardHeader>
           <CardTitle>Payment Analytics</CardTitle>

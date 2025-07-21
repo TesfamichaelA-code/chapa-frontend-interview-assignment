@@ -26,7 +26,7 @@ export default function HomePage() {
     return <LandingPage />
   }
 
-  // Show appropriate dashboard based on user role
+  
   const renderDashboard = () => {
     switch (user.role) {
       case "user":

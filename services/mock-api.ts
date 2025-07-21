@@ -1,6 +1,6 @@
 import type { User, Transaction, WalletBalance, SystemStats, PaymentSummary } from "@/types"
 
-// Mock data
+
 const mockUsers: User[] = [
   {
     id: "1",
@@ -92,16 +92,16 @@ const mockTransactions: Transaction[] = [
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 export const mockApiService = {
-  // Authentication
+
   async login(email: string, password: string): Promise<User> {
-    await delay(1000) // Simulate network delay
+    await delay(1000) 
 
     const user = mockUsers.find((u) => u.email === email)
     if (!user) {
       throw new Error("Invalid credentials")
     }
 
-    // Simple password check (in real app, this would be secure)
+   
     const validPasswords: Record<string, string> = {
       "user@chapa.co": "user123",
       "admin@chapa.co": "admin123",
@@ -115,7 +115,7 @@ export const mockApiService = {
     return user
   },
 
-  // User data
+  
   async getWalletBalance(): Promise<WalletBalance> {
     await delay(800)
     return {
@@ -147,7 +147,7 @@ export const mockApiService = {
     return newTransaction
   },
 
-  // Admin data
+  
   async getUsers(): Promise<User[]> {
     await delay(700)
     return mockUsers.filter((u) => u.role !== "super_admin")
@@ -191,7 +191,7 @@ export const mockApiService = {
     ]
   },
 
-  // Super Admin data
+ 
   async getSystemStats(): Promise<SystemStats> {
     await delay(1000)
 

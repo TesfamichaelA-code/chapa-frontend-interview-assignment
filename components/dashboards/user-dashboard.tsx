@@ -54,7 +54,7 @@ export function UserDashboard() {
     loadDashboardData()
   }, [])
 
-  // Real-time validation
+  
   useEffect(() => {
     if (amount) {
       const numAmount = Number.parseFloat(amount)
@@ -139,7 +139,7 @@ export function UserDashboard() {
 
       setTransactions((prev) => [newTransaction, ...prev])
 
-      // Update balance optimistically
+  
       if (balance) {
         setBalance({
           ...balance,
@@ -260,7 +260,7 @@ export function UserDashboard() {
         </Button>
       </div>
 
-      {/* Wallet Balance Cards */}
+  
       <div className="grid gap-4 md:grid-cols-3">
         <Card className="relative overflow-hidden border-0 shadow-lg bg-gradient-to-br from-green-600 to-green-700 text-white">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

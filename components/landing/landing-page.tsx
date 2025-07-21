@@ -145,11 +145,11 @@ export function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Navigation */}
+      
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 dark:bg-gray-900/95 dark:border-gray-700 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+      
             <div className="flex items-center">
               <Image
                 src="/chapa-official-logo.png"
@@ -164,7 +164,7 @@ export function LandingPage() {
               </div>
             </div>
 
-            {/* Desktop Navigation */}
+      
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-gray-600 hover:text-chapa-green transition-colors font-medium">
                 About
@@ -178,7 +178,7 @@ export function LandingPage() {
               <a href="#team" className="text-gray-600 hover:text-chapa-green transition-colors font-medium">
                 Team
               </a>
-              {/* Theme Toggle */}
+      
               {mounted && (
                 <Button
                   variant="ghost"
@@ -204,7 +204,7 @@ export function LandingPage() {
               </Button>
             </div>
 
-            {/* Mobile menu button */}
+      
             <div className="md:hidden">
               <Button
                 variant="ghost"
@@ -217,7 +217,7 @@ export function LandingPage() {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
+      
           {mobileMenuOpen && (
             <div className="md:hidden py-4 border-t border-gray-200 dark:border-gray-700 animate-slide-in-left bg-white/95 dark:bg-gray-900/95 backdrop-blur-md">
               <div className="flex flex-col space-y-4">
@@ -249,7 +249,7 @@ export function LandingPage() {
                 >
                   Team
                 </a>
-                {/* Theme Toggle */}
+      
                 {mounted && (
                   <Button
                     variant="ghost"
@@ -287,7 +287,7 @@ export function LandingPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      
       <section className="relative overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=none fillRule=evenodd%3E%3Cg fill=%2393C5FD fillOpacity=0.05%3E%3Ccircle cx=30 cy=30 r=2/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 relative">
@@ -414,7 +414,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      
       <section className="py-16 bg-white dark:bg-gray-800 border-y border-gray-200 dark:border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -436,7 +436,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* About Section */}
+      
       <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -513,7 +513,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Core Values Section */}
+      
       <section id="values" className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -550,7 +550,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Services Section */}
+      
       <section id="services" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -599,7 +599,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Team Section */}
+      
       <section id="team" className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -638,7 +638,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      
       <section className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
@@ -682,7 +682,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      
       <section className="py-20 bg-gradient-to-r from-chapa-green to-green-400 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=none fillRule=evenodd%3E%3Cg fill=%23ffffff fillOpacity=0.1%3E%3Ccircle cx=30 cy=30 r=2/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 relative">
@@ -736,7 +736,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">

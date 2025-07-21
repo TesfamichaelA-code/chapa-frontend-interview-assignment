@@ -46,7 +46,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    // Final validation
+    
     if (!email || !password) {
       toast({
         title: "Missing Information",
@@ -119,7 +119,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 p-4">
       <div className="w-full max-w-md space-y-6 animate-scale-in">
-        {/* Back to Home Button */}
+        
         {onBack && (
           <Button
             variant="ghost"
@@ -131,7 +131,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
           </Button>
         )}
 
-        {/* Header with Chapa Logo */}
+        
         <div className="text-center space-y-4">
           <div className="flex justify-center mb-6">
             <Image
@@ -149,7 +149,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
           </div>
         </div>
 
-        {/* Login Form */}
+        
         <Card className="shadow-xl border-0 bg-white/80 backdrop-blur-sm dark:bg-gray-800/80">
           <CardHeader className="space-y-1 pb-4">
             <CardTitle className="text-xl font-semibold text-center">Sign In</CardTitle>
@@ -185,7 +185,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
                 {emailError && <p className="text-xs text-red-500 animate-slide-in-left">{emailError}</p>}
               </div>
 
-              {/* Password Field */}
+        
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-sm font-medium">
                   Password
@@ -217,7 +217,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
                 {passwordError && <p className="text-xs text-red-500 animate-slide-in-left">{passwordError}</p>}
               </div>
 
-              {/* Submit Button */}
+        
               <Button
                 type="submit"
                 className="w-full bg-chapa-green hover:bg-chapa-green/90 text-white font-medium py-2.5 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98]"
@@ -228,7 +228,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
               </Button>
             </form>
 
-            {/* Forgot Password Link */}
+        
             <div className="text-center">
               <button className="text-sm text-chapa-green hover:underline transition-colors">
                 Forgot your password?
@@ -237,7 +237,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
           </CardContent>
         </Card>
 
-        {/* Demo Credentials */}
+        
         <Card className="shadow-lg border-0 bg-white/60 backdrop-blur-sm dark:bg-gray-800/60">
           <CardHeader className="pb-3">
             <CardTitle className="text-sm flex items-center gap-2">
@@ -282,7 +282,7 @@ export function LoginForm({ onBack }: LoginFormProps = {}) {
           </CardContent>
         </Card>
 
-        {/* Security Notice */}
+        
         <div className="text-center text-xs text-gray-500 dark:text-gray-400 space-y-1">
           <p>🔒 This is a demo application for interview purposes</p>
           <p>All data is simulated and no real transactions occur</p>

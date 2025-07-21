@@ -80,7 +80,7 @@ export function AdminDashboard() {
         <p className="text-muted-foreground">Manage users and monitor payment activities across the platform.</p>
       </div>
 
-      {/* Stats Cards */}
+
       <div className="grid gap-4 md:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -128,7 +128,7 @@ export function AdminDashboard() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        {/* User Management */}
+
         <Card>
           <CardHeader>
             <CardTitle>User Management</CardTitle>
@@ -169,7 +169,7 @@ export function AdminDashboard() {
           </CardContent>
         </Card>
 
-        {/* Payment Summaries */}
+
         <Card>
           <CardHeader>
             <CardTitle>Payment Summaries</CardTitle>

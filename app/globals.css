@@ -22,15 +22,15 @@
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 88 50% 53%; /* Chapa Green */
+    --ring: 88 50% 53%;
     --radius: 0.75rem;
-    --chart-1: 88 50% 53%; /* Chapa Green */
-    --chart-2: 88 30% 35%; /* Darker Chapa Green */
-    --chart-3: 88 70% 65%; /* Lighter Chapa Green */
-    --chart-4: 45 93% 58%; /* Complementary Yellow */
-    --chart-5: 142 76% 36%; /* Complementary Teal */
+    --chart-1: 88 50% 53%; 
+    --chart-2: 88 30% 35%; 
+    --chart-3: 88 70% 65%; 
+    --chart-4: 45 93% 58%; 
+    --chart-5: 142 76% 36%;
 
-    /* Chapa specific colors */
+    
     --chapa-green: 88 50% 53%;
     --chapa-green-dark: 88 30% 35%;
     --chapa-green-light: 88 70% 65%;
@@ -46,19 +46,19 @@
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-    --primary: 88 50% 53%; /* Chapa Green */
+    --primary: 88 50% 53%;
     --primary-foreground: 222.2 84% 4.9%;
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-    --accent: 88 50% 53%; /* Chapa Green */
+    --accent: 88 50% 53%;
     --accent-foreground: 222.2 84% 4.9%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 88 50% 53%; /* Chapa Green */
+    --ring: 88 50% 53%;
     --chart-1: 88 50% 53%;
     --chart-2: 88 30% 35%;
     --chart-3: 88 70% 65%;
@@ -76,7 +76,7 @@
   }
 }
 
-/* Custom animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -92,7 +92,7 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-/* Loading skeleton */
+
 @keyframes pulse {
   0%,
   100% {
@@ -107,14 +107,14 @@
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Smooth transitions */
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-/* Custom Chapa utility classes */
+
 .bg-chapa-green {
   background-color: hsl(var(--chapa-green));
 }
@@ -127,7 +127,7 @@
   border-color: hsl(var(--chapa-green));
 }
 
-/* Enhanced animations for better UX */
+
 @keyframes slideInFromLeft {
   from {
     opacity: 0;
@@ -173,7 +173,7 @@
   animation: scaleIn 0.2s ease-out;
 }
 
-/* Loading states */
+
 .skeleton {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;

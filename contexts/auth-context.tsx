@@ -19,7 +19,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Check for stored user session
+   
     const storedUser = localStorage.getItem("chapa_user")
     if (storedUser) {
       setUser(JSON.parse(storedUser))

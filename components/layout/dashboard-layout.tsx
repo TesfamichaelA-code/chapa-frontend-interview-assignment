@@ -17,7 +17,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const { user, logout } = useAuth()
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
-  const [notifications] = useState(3) // Mock notification count
+  const [notifications] = useState(3) 
 
   useEffect(() => {
     setMounted(true)
@@ -65,7 +65,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
   const handleLogout = () => {
     logout()
-    // Add a small delay for better UX
+    
     setTimeout(() => {
       window.location.reload()
     }, 100)
@@ -73,10 +73,10 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-      {/* Header */}
+    
       <header className="sticky top-0 z-50 border-b bg-white/80 backdrop-blur-md dark:bg-gray-800/80 shadow-sm">
         <div className="flex h-16 items-center px-6">
-          {/* Logo and Brand */}
+    
           <div className="flex items-center space-x-4">
             <Image
               src="/chapa-official-logo.png"
@@ -94,14 +94,14 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
             </div>
           </div>
 
-          {/* Right side */}
+    
           <div className="ml-auto flex items-center space-x-4">
-            {/* Welcome Message */}
+    
             <div className="hidden md:block text-sm text-gray-600 dark:text-gray-400">
               {getWelcomeMessage()}, {user?.name?.split(" ")[0]}!
             </div>
 
-            {/* Role Badge */}
+    
             <Badge
               variant={getRoleBadgeVariant(user?.role || "user")}
               className="flex items-center gap-1 animate-slide-in-right"
@@ -110,7 +110,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               {getRoleLabel(user?.role || "user")}
             </Badge>
 
-            {/* Notifications */}
+    
             <Button variant="ghost" size="sm" className="relative">
               <Bell className="h-4 w-4" />
               {notifications > 0 && (
@@ -120,14 +120,14 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
               )}
             </Button>
 
-            {/* Theme Toggle */}
+    
             {mounted && (
               <Button variant="ghost" size="sm" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                 {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
               </Button>
             )}
 
-            {/* Logout Button */}
+    
             <Button
               variant="outline"
               size="sm"
@@ -140,7 +140,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
         </div>
       </header>
 
-      {/* Main Content */}
+    
       <main className="p-6">
         <div className="max-w-7xl mx-auto">{children}</div>
       </main>
