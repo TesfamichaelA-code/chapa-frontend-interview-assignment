@@ -73,22 +73,6 @@ npm run dev
 
 ## 🏗 Project Structure
 
-\`\`\`
-├── app/                    # Next.js app directory
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── components/            # React components
-│   ├── auth/             # Authentication components
-│   ├── dashboards/       # Role-specific dashboards
-│   ├── layout/           # Layout components
-│   └── ui/               # shadcn/ui components
-├── contexts/             # React contexts
-├── services/             # API services and mock data
-├── types/                # TypeScript type definitions
-└── hooks/                # Custom React hooks
-\`\`\`
-
 ##  Key Features Implemented
 
 ### Mock API Service
